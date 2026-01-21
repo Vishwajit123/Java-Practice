@@ -9,8 +9,8 @@ public class factorial {
             return 1;
         }
         
-           int ff=n * printFact (n-1);
-           return ff;
+           int fa=n * printFact (n-1);
+           return fa;
       
     }
     public static void main(String[] args) {
