@@ -68,6 +68,7 @@ public class SMSProject{
 
                         for(Student s: students){
                             s.display();
+                            
                         }
                     }
                       System.out.println("Press Enter to continue...");
