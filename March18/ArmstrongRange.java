@@ -1,12 +1,17 @@
 import java.util.Scanner;
-class Armstrong{
+class ArmstrongRange{
     public static void main(String[] main){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number:");
-        int n = sc.nextInt();
+        System.out.println("Enter the start number:");
+        int start = sc.nextInt();
+        System.out.println("Enter the end number:");
+        int end = sc.nextInt();
 
+        while(start <= end){
         int sum = 0;
         int cnt = 0;
+        int n = start;
+        int temp =n;
         for(int i = n; i > 0; i/=10){
            cnt++;
         }
@@ -18,16 +23,17 @@ class Armstrong{
                 power *= ld;
                 
             }
-            sum += power;
-        
+             sum += power;
+             
         }
+    
            
         
-        if(sum == n){
-            System.out.println("Armstrong Number is found");
+        if(sum == temp){
+            System.out.println(temp + " Armstrong Number");
         }
-        else{
-            System.out.println("Armstrong Number is not  found");
-        }
+       
+        start++;
     }
+}
 }

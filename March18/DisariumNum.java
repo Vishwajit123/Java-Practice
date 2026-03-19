@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Armstrong{
+class DisariumNum{
     public static void main(String[] main){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number:");
@@ -19,15 +19,15 @@ class Armstrong{
                 
             }
             sum += power;
-        
+            cnt--;
         }
            
         
         if(sum == n){
-            System.out.println("Armstrong Number is found");
+            System.out.println("disarium Number is found");
         }
         else{
-            System.out.println("Armstrong Number is not  found");
+            System.out.println("disarium Number is not  found");
         }
     }
 }
